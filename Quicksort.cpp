@@ -10,8 +10,9 @@ void printArray(int[], int);
 
 int main()
 {
-    int arr[10000];
-    int n = 20;
+    int n = pow(10,6);
+    int* arr;
+    arr = new int [n];
     Input(arr, n);
     quickSort(arr, 0, n - 1);
     cout << "Sorted array: \n";
